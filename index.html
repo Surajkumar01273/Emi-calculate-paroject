@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi calculate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="calculate.js"></script>
+    <center> 
+        <h1>EMI CALCULATER</h1>
+    </center>
+
+    <div>
+        <form onsubmit="return false">
+            <label for="amount1">Loan Amount :</label>
+            <input type="text" id="amount" name="principle">
+            <br><br>
+            <label for="rate1">Interest Rate :</label>
+            <input type="text" name="irate" id="rate">
+            <br><br>
+            <label for="years1">Years to Pay :</label>
+            <input type="text" name="time" id="years">
+            <br><br>
+            <label for="button1"></label>
+            <input type="submit" name="batan" id="button1" value="Calculate" onclick="calculate1(amount.value,rate.value,years.value)"/>
+        </form>
+    </div>
+    <label for="output" id="demo"></label>
+    
+</body>
+</html>
